@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Nuevas entradas</h1>
+  <h2>Entradas</h2>
+</div>
+
+<div class="card">
+  <div *ngFor="let item of entradas">
+    <h3>{{ item.API }}</h3>
+    <p>{{ item.Description }}</p>
+    <p>{{ item.Category }}</p>
+    <p>{{ item.Link }}</p>
+    <a [href]="item.Link" target="blank">read more</a>
+    <hr />
+  </div>
+</div>
